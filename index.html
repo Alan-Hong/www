@@ -83,7 +83,6 @@
                     <li><a class="nav-item waves-effect waves-light active" href="#Examples">Examples</a></li>
                     <li><a class="nav-item waves-effect waves-light active" href="#Recruitment">Recruitment</a></li>
                     <li><a class="nav-item waves-effect waves-light active" href="#People">People</a></li>
-
                 </ul>
             </div>
         </nav>
@@ -311,8 +310,10 @@
             <hr>
         </div>        
 
-        
-        <div class="title" style="float:middle">基于耳机逆向声传播的逐颗牙齿的刷牙计时辅助工具</div>
+        <div class="title" style="float:middle;text-align:center;">智能感知相关研究</div>
+        <hr>
+
+        <div class="title" style="float:middle;">基于耳机逆向声传播的逐颗牙齿的刷牙计时辅助工具</div>
         <hr>
         <div id="cell1" style="width:50%;float:middle">
             <a href="https://www.bilibili.com/video/BV1Z14y1c7pi/">
@@ -368,8 +369,134 @@
             </a>
         </div>
 
+        <div class="title" style="float:middle;text-align:center;">海洋轨迹大数据相关研究</div>
+        <hr>
+
+        <div class="title" style="clear: both;">FVRD：基于渔船轨迹的渔船关系发现系统</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\FVDR.png" width=95% alt="" />
+            <p style=" text-align:center;">瑞安市渔业船舶关系网络。(1-刺网;2-双拖; 3-捕虾; 4-单拖; 5-运输; 6-张网)</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本研究中，我们提出了一个渔船关系发现系统（FVRD）。FVRD计算渔船之间的相互作用时间，然后将其用作权重生成关系网络。<br>图示可以发现同种作业类型的渔业船舶能够被分为同一类，其连接较为紧密，不同作业类型的渔业船舶也能够较好的区分开，这证明FVRD模型能够较好的识别渔业船舶间的关系网络。</p>
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9116983" target="_blank" style="width:100%;">Huang, Haiguang; Cui, Xiaojun*; Bi, Xiaoming; Liu, Chao; Hong, Feng*; Guo, Shuai; FVRD: Fishing Vessels Relationships Discovery System Through Vessel Trajectory, IEEE Access, 2020, 8：112530-112538. SCIE.</a>
+        </div>
+
+        <div class="title" style="clear: both;">基于LSTM的拖网渔船VMS轨迹插值</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\cHsAndLstm.png" width=95% alt="LSTM模型与CHS方法在捕捞轨迹段上的补全效果示例" />
+            <p style=" text-align:center;">LSTM与CHS在捕捞轨迹段上的补全效果示例</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本文提出一种混合插值方案，将LSTM和CHS相结合进行缺失样本插入。在对传统轨迹插值方法cHs的效果进行评估的基础上，本研究设计基于LSTM的轨迹插值模型用于渔业船舶轨迹补全。<br>图示可以发现LSTM模型在轨迹段转弯处的补全效果明显优于CHS方法的补全结果。</p>
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9389435" target="_blank" style="width:100%;">Zhao, Zhongning; Tian, Ying; Hong, Feng*; Huang, Haiguang; Zhou, Shutian; Trawler Fishing Track Interpolation using LSTM for Satellite-based VMS Traces, IEEE/MTS OCEANS 2020, Singapore, 2020-10-5至2020-10-14. EI. </a>
+        </div>
+
+        <div class="title" style="clear: both;">基于Bi-LSTM的海上船舶网络轨迹数据传递算法</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\Bi_LSTM.png" width=95% alt="" />
+            <p style=" text-align:center;">Bi-LSTM模型未来轨迹预测随时间增加的误差分布图</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本研究中，我们通过双向长短时记忆（Bi-LSTM）模型开发了一种准确的长期轨迹预测模型。基于预测的轨迹，我们提出了一种基于预测结果的数据传输算法，以实现高效的通信性能。<br>图示为在采样率为3分钟情况下，东海拖网渔船未来一小时的轨迹点绝对误差分布。Bi-LSTM预测模型在1小时以内的误差均小于600米，达到了较高的预测精度。</p>
+            <br>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-59016-1_25" target="_blank" style="width:100%;">Liu, Chao; Li, Yingbin; Jiang, Ruobing*; Lu, Qian; Guo, Zhongwen; Trajectory-Based Data Delivery Algorithm in Maritime Vessel Networks Based on Bi-LSTM, 15th International Conference on Wireless Algorithms, Systems, and Applications, WASA 2020, Qingdao, China, 2020-9-13至2020-9-15. EI.</a>
+        </div>
+
+        <div class="title" style="clear: both;">基于VMS和拖网渔船捕捞时序的捕捞努力分布短期预测</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\predictedFishingEffort.png" width=95% alt="" />
+            <p style=" text-align:center;">预测捕鱼努力分布</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本研究提出一种通过挖掘一种新的知识类型——拖网渔船捕捞时序关系，来进行捕捞努力分布短期预测的系统。
+基于捕捞时序关系，我们设计了一个卷积神经网络（CNN），以预测短期捕鱼努力的分布。<br>本研究提出的基于捕捞船舶关系的捕捞强度预测模型实现了空间分辨率为0.25° *0.25°，预测未来一周的周级别的捕捞强度分布预测，预测平均误差仅为6.95%。</p>
+            <br>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0957417421009222" target="_blank" style="width:100%;">Zhao Zhongning; Hong Feng*; Huang Haiguang; Liu Chao; Feng Yuan; Guo Zhongwen; Short-term prediction of fishing effort distributions by discovering fishing chronology among trawlers based on VMS dataset, Expert Systems with Applications, 2021, 184(115512). SCIE, EI.</a>
+        </div>
+
+        <div class="title" style="clear: both;">HIT：基于深度学习的拖网渔船混合插值方法</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\HIT.png" width=95% alt="" />
+            <p style=" text-align:center;">HIT与CHS插值结果比较</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本研究提出了一种名为“拖网渔船混合插值模型（Hybrid Interpolation for Trawlers，简称HIT）”的插值模型。HIT基于boost learning设计，包括单层深度神经网络（1-DNN）和长短期记忆（LSTM）神经网络。1-DNN 提供航行状态下轨迹的插值，而 LSTM 则细化捕捞状态下的插值。<br>图示可以发现对于转弯行为，cHs只能根据速度和航向变化给出平滑的曲线。然而HIT可以学习历史的捕鱼行为模式，给出更精确的插值。</p>
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9705828" target="_blank" style="width:100%;">Guanlong Teng; Zhongning Zhao; Feng Hong*; Bin Wang; Haiguang Huang; HIT: Hybrid Interpolation for Trawlers based on Deep Learning, OCEANS 2021 San Diego - Porto, 2021-9-20至2021-9-23. EI.</a>
+        </div>
+
+        <div class="title" style="clear: both;">轨迹大数据驱动的网络特征提取和数据传输仿真器</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\Simulator.png" width=95% alt="" />
+            <p style="text-align: center;">渔业船舶轨迹大数据仿真器框架</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本研究中，我们提出了一个基于轨迹大数据的网络模拟器，具有大规模网络、特征提取和数据传输的交互式可视化功能。我们的模拟器包括数据预处理、网络特征提取、行为仿真三个核心模块。</p>
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9973601" target="_blank" style="width:100%;">Xiaohui Wang; Ruobing Jiang*; He Zhang; Chao Liu; Feng Hong; A Simulator Driven by Trajectory Big Data for Network Feature Extraction and Data Transmission, 2022 IEEE International Conference on Mobile Ad-hoc and Sensor Systems, Denver, Colorado, 2022-10-20至2022-10-22. EI.</a>
+        </div>
+
+        <div class="title" style="clear: both;">VDU：基于多源数据融合的拖网渔船VMS数据上采样</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\VDU.png" width=95% alt="" />
+            <p style=" text-align:center;">VDU与不同模型插值结果比较</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本文提出了一种基于多源数据融合的拖网渔船VMS数据集上采样（VDU）方法，该方法整合了额外的海洋环境因素（MEF），以帮助模型捕捉运动特征。</p>
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10244460" target="_blank" style="width:100%;">Jiaxuan Chen; Zhongning Zhao; Feng Hong*; Haiguang Huang; VDU: VMS Dataset Upsampling via Multi-Source Data Fusion for Trawlers, OCEANS 2023 – Limerick, 2023-06-05至2023-06-08. EI</a>
+        </div>
+
+        <div class="title" style="clear: both;">HiTrip：利用深度学习基于多源数据的拖网渔船历史轨迹插值</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\HiTrip_results.jpg" width=95% alt="渔船轨迹上两端点间的插值轨迹结果（2小时采样周期）" />
+            <p style=" text-align:center;">渔船轨迹上两端点间的插值轨迹结果（2小时采样周期）</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本研究中，我们介绍一种深度学习方法：HiTrip。HiTrip利用VMS和海洋水文数据将VMS数据采样间隔从两小时变为三分钟。<br>HiTrip的高精度插值来源于所设计的深度学习网络有效综合了多种数据源（粗粒度捕捞强度、SSH、SSS和SST等）的时空特性。</p>
+            <br>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0029801823029724" target="_blank" style="width:100%;">Zhongning Zhao; Jiaxuan Chen; Yuqi Shi; Feng Hong*; Guiyuan Jiang; Haiguang Huang; Jinhua Zhao; HiTrip: Historical trajectory interpolation for trawlers via deep learning on multi-source data, Ocean Engineering, 2024, 292(116588). SCIE, EI.</a>
+        </div>
+
+        <div class="title" style="clear:both;text-align:center;">海洋大数据相关研究</div>
+        <hr>
+
+        <div class="title" style="clear: both;">基于时序卷积网络和物联网的长时间跨度，大范围，高精度印度洋海表温度预测</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\TCN_SST.png" width=95% alt="" />
+            <p style=" text-align:center;">2015年6月份海表面高度TCN预测结果（70°E-90°E，0°-10°S）</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">本研究中，我们基于物联网技术和时间卷积网络（TCN），对2014年至2018年印度洋的月平均海表温度进行了预测。研究发现，TCN可以准确预测长期海表温度（SST），为研究大规模海洋物理现象提供了基础。</p>
+            <br>
+            <a href="https://www.mdpi.com/1424-8220/22/4/1636" target="_blank" style="width:100%;">Tianying Sun; Yuan Feng; Chen Li; Xingzhi Zhang; High Precision Sea Surface Temperature Prediction of Long Period and Large Area in the Indian Ocean Based on the Temporal Convolutional Network and Internet of Things, Sensors, 2022, 22(4): 1636. SCIE, EI.</a>
+        </div>
+
+        <div class="title" style="clear: both;">基于convLSTM的长期印度洋偶极子（IOD）指数预测</div>
+        <hr>
+        <div id="left" style="width:50%;float:left;">
+            <img src="data\Trajectory\IOD.png" width=95% alt="" />
+            <p style=" text-align:center;">2015年convLSTM模型和CFSv2模型的预测IOD指数曲线对比</p>
+        </div>
+        <div id="right" style="width:50%;float:right;">
+            <p style="width:100%;float:right;">在本文中，使用卷积长短时记忆（convLSTM）神经网络构建深度学习模型，用于预测未来七个月的海表温度并计算IOD指数。</p>
+            <br>
+            <a href="https://www.mdpi.com/2072-4292/14/3/523" target="_blank" style="width:100%;">Chen Li; Tianying Sun; Yuan Feng; Xingzhi Zhang; 	Long Term Indian Ocean Dipole (IOD) Index Predication Used Deep Learning by convLSTM, Remote Sensing, 2022, 14(3): 523. SCIE, EI.</a>
+        </div>
+
     </div>    
-    </div>
 
     <!--==========================================
                    Recruitment
