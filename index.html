@@ -1,1617 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-    <meta name="description" content="Feng Hong, Ocean University of China" />
-    <title>Feng Hong's Homepage</title>
-
-    <!-- CSS  -->
-    <link type="text/css" href="People_files/system.css" rel="stylesheet">
-    <link type="text/css" href="People_files/1.css" rel="stylesheet">
-    <link type="text/css" href="People_files/291.css" rel="stylesheet">
-    <link type="text/css" href="People_files/css.css" rel="stylesheet">
-    <link href="materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="aos.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection">
-
-    <!-- Place your kit's code here -->
-    <script src="https://kit.fontawesome.com/fed508a68e.js" crossorigin="anonymous"></script>
-    <script language="javascript" src="People_files/jquery.js" sudy-wp-context="" sudy-wp-siteid="363"></script>
-    <script language="javascript" src="People_files/jquery_002.js"></script>
-    <script type="text/javascript" src="People_files/layer.js"></script>
-    <link type="text/css" rel="stylesheet" href="People_files/layer_002.css" id="skinlayercss">
-    <script type="text/javascript" src="People_files/slidegallery.js"></script>
-    <script type="text/javascript" src="People_files/wp_images_player.js"></script>
-    <link href="People_files/centerstyle.css" rel="stylesheet" type="text/css">
-    <script src="People_files/layer_002.js" id="extendlayerextdevjs"></script>
-    <link type="text/css" rel="stylesheet" href="People_files/layer.css" id="skinlayerextcss">
-    <style>
-        div.noshow {
-            display: none;
-        }
-
-        div.bibtex {
-            margin-right: 10%;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            padding: 0.2em 0.5em;
-            background: #F8F9F9;
-        }
-
-        div.bibtex pre {
-            font-family: Georgia, Times, Arial;
-            font-size: 85%;
-            overflow: auto;
-            width: 100%;
-            padding: 0em 0em;
-        }
-    </style>
-
-    <!--Toggle Display of BibTeX-->
-    <script type="text/javascript">
-
-        function toggleBibtex(articleid) {
-            var bib = document.getElementById('bib_' + articleid);
-            if (bib) {
-                if (bib.className.indexOf('bibtex') != -1) {
-                    bib.className.indexOf('noshow') == -1 ? bib.className = 'bibtex noshow' : bib.className = 'bibtex';
-                }
-            } else {
-                return;
-            }
-        }
-
-    </script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="洪锋，中国海洋大学教授，研究方向为物联网智能感知、海洋轨迹大数据挖掘与海洋大数据分析。">
+  <title>洪锋 | 个人主页</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-
-
-    <div style="font: initial;" class="navbar-fixed">
-        <nav class="white">
-            <div class="nav-wrapper container"><a id="logo-container" class="brand-logo"></a>
-                <ul class="left">
-                    <li><a class="nav-item waves-effect waves-light active" href="./index.html">Home</a></li>
-                    <li><a class="nav-item waves-effect waves-light active" href="#Biography">Biography</a></li>
-                    <li><a class="nav-item waves-effect waves-light active" href="#Experience">Experience</a></li>
-                    <li><a class="nav-item waves-effect waves-light active" href="#Funding">Funding</a></li>
-                    <li><a class="nav-item waves-effect waves-light active" href="#Funding">Teaching</a></li>
-                    <li><a class="nav-item waves-effect waves-light active" href="#Publications">Publications</a></li>
-                    <li><a class="nav-item waves-effect waves-light active" href="#Examples">Examples</a></li>
-                    <li><a class="nav-item waves-effect waves-light active" href="#Recruitment">Recruitment</a></li>
-                    <li><a class="nav-item waves-effect waves-light active" href="#People">People</a></li>
-                </ul>
-            </div>
-        </nav>
+<body>
+  <header class="site-header">
+    <div class="wrapper topbar">
+      <a class="brand" href="#top">
+        <span class="brand-mark">FH</span>
+        <span class="brand-text">
+          <strong>洪锋</strong>
+          <span>Ocean University of China</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#about">简介</a>
+        <a href="#experience">经历</a>
+        <a href="#projects">项目</a>
+        <a href="#teaching">教学</a>
+        <a href="#publications">论文</a>
+        <a href="#highlights">成果</a>
+        <a href="#recruitment">招生</a>
+        <a href="#people">学生</a>
+      </nav>
     </div>
+  </header>
 
-
-    <!--==========================================
-                   Profile
-===========================================-->
-
-    <div id="home" class="parallax-container scrollspy">
-        <div class="container row cover-block">
-            <div class="profile-image-block col s12 m12 l4 center">
-                <img class="responsive-img profile-photo z-depth-2" src="./data/hongfeng2022.jpeg"
-                    style="width: 60%; height: 60%">
-            </div>
-
-            <div class="profile-content-block col s12 m12 l8">
-                <h5 class="profile-name">洪锋 (Feng Hong)</h5>
-                <hr>
-                <p class="profile-link" style="margin: 17.33px 0;"><a href="http://it.ouc.edu.cn"
-                        target="blank">信息科学与工程学部</a></p>
-                <p class="profile-link" style="margin: 17.33px 0;"><a href="http://www.ouc.edu.cn"
-                        target="blank">中国海洋大学</a></p>
-                <p class="profile-link" style="margin: 17.33px 0;">Email: hongfeng at ouc dot edu dot cn</a></p>
-                <p class="profile-link" style="margin: 17.33px 0;">Office: 青岛市黄岛区三沙路1299号信息南楼A511室</a></p>
-                <h1></h1>
-
-            </div>
+  <main id="top">
+    <section class="hero">
+      <div class="wrapper hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">物联网智能感知 · 海洋轨迹大数据 · 海洋大数据分析</p>
+          <h1>洪锋</h1>
+          <p class="hero-subtitle">中国海洋大学教授、博士生导师，长期从事智能感知系统、轨迹大数据挖掘与海洋信息技术研究。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://scholar.google.com/citations?hl=zh-CN&user=BG3iIWAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a class="button button-secondary" href="https://www.researchgate.net/profile/Feng_Hong" target="_blank" rel="noreferrer">ResearchGate</a>
+            <a class="button button-secondary" href="People.html">学生风采</a>
+          </div>
+          <ul class="fact-list">
+            <li><strong>单位</strong><span>中国海洋大学 信息科学与工程学部</span></li>
+            <li><strong>邮箱</strong><span>hongfeng at ouc dot edu dot cn</span></li>
+            <li><strong>办公室</strong><span>青岛市黄岛区三沙路1299号 信息南楼 A511</span></li>
+          </ul>
         </div>
-    </div>
-
-
-
-    <!--==========================================
-                   Biography
-===========================================-->
-    <div class="row container"><a name="Biography"></a>
-        <div class="row"><br>
-            <div class="title">基本信息</div>
-            <hr>
-
-            <p style="font-size: 16.4px;">洪锋，教授、博导、博士，国际计算机学会中国应用计算委员会秘书长、CCF分布式计算与系统专委会执行委员、国际学术期刊Sensors主题编委、IEEE
-                1851、2735国际标准工作组成员；
-                长期从事物联网智能感知和轨迹大数据挖掘研究。先后主持国家自然科学基金面上项目2项、青年项目1项；并参与国家重点研发计划、973计划、863计划等10余项国家级课题研究。
-                在包括ACM Computing Survey、Ocean Engineering、Ubicomp、CHI、INFOCOM、Sensys、等国际学术期刊和国际会议发表学术论文100余篇。
-            </p>
-
-
-        </div>
-    </div>
-
-    <!--==========================================
-                   Experience
-===========================================-->
-    <div class="row container"><a name="Experience"></a>
-        <div class="row">
-            <div class="title">教育及工作经历</div>
-            <hr>
-            <ul>
-                <li>
-                    <i class="fas fa-user-md"></i><b> 教育经历：</b>
-                <li>
-                    2001/09－2006/06，上海交通大学，计算机应用技术，博士
-                </li>
-                <li>
-                    1996/09－2000/06，中国海洋大学，计算机科学与技术，学士
-                </li>
-                <li>
-                    2017/09 - 2017/11，德国德累斯顿工业大学，访问学者
-                </li>
-                <li>
-                    2016/07－2016/08，美国加州大学洛杉矶分校，访问学者
-                </li>
-                <li>
-                    2010/09－2010/11，德国慕尼黑工业大学，访问学者
-                </li>
-
-
-
-                <li>
-                    <i class="fas fa-user-md"></i> <b> 工作经历：</b>
-                </li>
-                <li>
-                    2016/7－今 中国海洋大学，讲师、副教授、教授
-                </li>
-                <li>
-                    2000/09-2001/08 中国海洋大学，科员
-                </li>
+        <aside class="hero-panel">
+          <img class="portrait" src="data/hongfeng2022.jpeg" alt="洪锋教授照片">
+          <div class="panel-card">
+            <h2>学术角色</h2>
+            <ul class="tag-list">
+              <li>ACM 中国应用计算委员会秘书长</li>
+              <li>CCF 分布式计算与系统专委会执行委员</li>
+              <li>Sensors 主题编委</li>
+              <li>IEEE 1851 / 2735 标准工作组成员</li>
             </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrapper">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>基本信息</h2>
         </div>
-    </div>
+        <div class="two-column">
+          <div class="content-card prose-card">
+            <p>洪锋，教授、博导、博士，长期从事物联网智能感知和轨迹大数据挖掘研究。先后主持国家自然科学基金面上项目 2 项、青年项目 1 项，并参与国家重点研发计划、973 计划、863 计划等 10 余项国家级课题研究。</p>
+            <p>在 ACM Computing Survey、Ocean Engineering、UbiComp、CHI、INFOCOM、SenSys 等国际学术期刊和会议发表论文 100 余篇，持续关注海洋场景下的感知系统、轨迹分析与智能应用。</p>
+          </div>
+          <div class="content-card metric-card">
+            <div class="metric-grid">
+              <div>
+                <strong>100+</strong>
+                <span>学术论文</span>
+              </div>
+              <div>
+                <strong>10+</strong>
+                <span>国家级课题参与</span>
+              </div>
+              <div>
+                <strong>4</strong>
+                <span>IEEE / 国家标准</span>
+              </div>
+              <div>
+                <strong>5</strong>
+                <span>代表性发明专利</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-    <!--==========================================
-                   Funding
-===========================================-->
-    <div class="row container" id="#Funding"><a name="Preprints"></a>
-        <div class="row">
-            <div class="title">研究项目</div>
-            <hr>
-            
-            <ul type="disc">
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2024/12-2027/11, 国家重点研发计划，“支撑产品设计/制造/服务一体化的数智化底座”专项，多业务域多层动态资源互联与智能管理技术-子课题（2024YFB3311802），位次2
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2020.01-2023.12, 国家自然科学基金面上项目，船位监控系统大数据驱动的海洋捕捞强度分布预测研究（41976185），位次1
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2020.01-2023.12, 国家自然科学基金面上项目，船位监控系统大数据驱动的海洋捕捞强度分布预测研究（41976185），位次1
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2017.01-2020.06，青岛海洋科学与技术试点国家实验室开放基金项目, “融合渔业船舶轨迹和遥感图像大数据的海洋渔业资源时空演化规律建模与应用”（QNLM20160RP0405)，位次2
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2014.01-2017.12, 国家自然科学基金面上项目，“基于移动建模的水下传感器网络时间同步理论与算法研究”(#61379128)，位次1
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2010.01-2013.12，国家自然科学基金重点项目，“移动容迟网络理论与关键技术研究”(#60933011)，主要成员
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2010.01-2012.12，青岛市科技发展计划项目，“水下观测仪器组网通信设备研究”(#2010-3-4-1-6-jch)，位次1
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2008.01-2010.12，国家自然科学基金青年基金项目，“基于信誉策略的拓扑自适应的对等网络激励机制研究”(#60703082)，位次1
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2007.09-2010.12，973项目“无线传感网络的基础理论及关键技术研究”(#2006CB303000)的子课题“海洋传感器监测网络”(OceanSense)，主要成员
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2007.01-2008.12，863项目，“基于网格的海洋环境数据信息共享与信息服务技术的研究”(#2006AA09Z139)，主要成员
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2006.11-2008.11，863项目，“水下传感器网络组网协议关键技术研究”(#2006AA09Z113)，主要成员
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    2004.01－2006.06, 国家自然科学基金重点项目，“对等计算及广域网虚拟平台”(＃60343040)，主要成员 </li>
+    <section class="section section-tint" id="experience">
+      <div class="wrapper">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>教育与工作经历</h2>
+        </div>
+        <div class="timeline-grid">
+          <article class="content-card">
+            <h3>教育与访学</h3>
+            <ul class="timeline-list">
+              <li><span>2001/09 - 2006/06</span><strong>上海交通大学</strong> 计算机应用技术，博士</li>
+              <li><span>1996/09 - 2000/06</span><strong>中国海洋大学</strong> 计算机科学与技术，学士</li>
+              <li><span>2017/09 - 2017/11</span><strong>德国德累斯顿工业大学</strong> 访问学者</li>
+              <li><span>2016/07 - 2016/08</span><strong>美国加州大学洛杉矶分校</strong> 访问学者</li>
+              <li><span>2010/09 - 2010/11</span><strong>德国慕尼黑工业大学</strong> 访问学者</li>
             </ul>
-        </div>
-    </div>
-
-    <!--==========================================
-                   Teaching
-===========================================-->
-    <div class="row container" id="teaching"><a name="Teaching"></a>
-        <div class="row">
-            <div class="title">授课</div>
-            <hr>
-            <ul type="disc">
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    <a
-                        href="https://www.ketangpai.com/#/main/classDetail?courseid=MDAwMDAwMDAwMLOGtZeIuaeyhctyoQ&courserole=1&submodulename=0">研究生课程：高级计算机系统结构</a>
-                </li>
-                <li><i class="fa fa-flag" aria-hidden="true"></i>
-                    <a
-                        href="https://wlkc.ouc.edu.cn/webapps/login/?new_loc=%2Fwebapps%2Fblackboard%2Fcontent%2Fcontent_access_denied.jsp">本科生课程：计算机网络</a>
-                </li>
+          </article>
+          <article class="content-card">
+            <h3>工作经历</h3>
+            <ul class="timeline-list">
+              <li><span>2016/07 - 至今</span><strong>中国海洋大学</strong> 讲师、副教授、教授</li>
+              <li><span>2000/09 - 2001/08</span><strong>中国海洋大学</strong> 科员</li>
             </ul>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrapper">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>研究项目</h2>
+        </div>
+        <div class="content-card">
+          <ul class="stack-list">
+            <li>2024/12 - 2027/11，国家重点研发计划，“支撑产品设计/制造/服务一体化的数智化底座”专项，多业务域多层动态资源互联与智能管理技术子课题（2024YFB3311802），位次 2</li>
+            <li>2020/01 - 2023/12，国家自然科学基金面上项目，船位监控系统大数据驱动的海洋捕捞强度分布预测研究（41976185），位次 1</li>
+            <li>2017/01 - 2020/06，青岛海洋科学与技术试点国家实验室开放基金项目，融合渔业船舶轨迹和遥感图像大数据的海洋渔业资源时空演化规律建模与应用（QNLM20160RP0405），位次 2</li>
+            <li>2014/01 - 2017/12，国家自然科学基金面上项目，基于移动建模的水下传感器网络时间同步理论与算法研究（61379128），位次 1</li>
+            <li>2010/01 - 2013/12，国家自然科学基金重点项目，移动容迟网络理论与关键技术研究（60933011），主要成员</li>
+            <li>2010/01 - 2012/12，青岛市科技发展计划项目，水下观测仪器组网通信设备研究（2010-3-4-1-6-jch），位次 1</li>
+            <li>2008/01 - 2010/12，国家自然科学基金青年基金项目，基于信誉策略的拓扑自适应的对等网络激励机制研究（60703082），位次 1</li>
+            <li>2007/09 - 2010/12，973 项目子课题“海洋传感器监测网络（OceanSense）”，主要成员</li>
+            <li>2007/01 - 2008/12，863 项目，基于网格的海洋环境数据信息共享与信息服务技术研究（2006AA09Z139），主要成员</li>
+            <li>2006/11 - 2008/11，863 项目，水下传感器网络组网协议关键技术研究（2006AA09Z113），主要成员</li>
+            <li>2004/01 - 2006/06，国家自然科学基金重点项目，对等计算及广域网虚拟平台（60343040），主要成员</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="teaching">
+      <div class="wrapper">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching</p>
+          <h2>授课信息</h2>
+        </div>
+        <div class="course-grid">
+          <article class="content-card course-card">
+            <h3>研究生课程</h3>
+            <p>高级计算机系统结构</p>
+            <a class="text-link" href="https://www.ketangpai.com/#/main/classDetail?courseid=MDAwMDAwMDAwMLOGtZeIuaeyhctyoQ&courserole=1&submodulename=0" target="_blank" rel="noreferrer">进入课程页面</a>
+          </article>
+          <article class="content-card course-card">
+            <h3>本科生课程</h3>
+            <p>计算机网络</p>
+            <a class="text-link" href="https://wlkc.ouc.edu.cn/webapps/login/?new_loc=%2Fwebapps%2Fblackboard%2Fcontent%2Fcontent_access_denied.jsp" target="_blank" rel="noreferrer">进入课程页面</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="wrapper">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>论文与学术产出</h2>
+        </div>
+        <div class="two-column">
+          <div class="content-card prose-card">
+            <p>近年论文主要发表于 ACM Computing Survey、UbiComp、CHI、INFOCOM、SenSys、IJCAI、EWSA、EAAI、Ocean Engineering、 Rev Fish Biol Fisheries等学术期刊和会议。</p>
+            <p>完整论文列表请参考学术主页平台。</p>
+          </div>
+          <div class="content-card link-panel">
+            <a href="https://www.researchgate.net/profile/Feng_Hong" target="_blank" rel="noreferrer">ResearchGate</a>
+            <a href="https://scholar.google.com/citations?hl=zh-CN&user=BG3iIWAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="honors">
+      <div class="wrapper">
+        <div class="section-heading">
+          <p class="eyebrow">Standards & Honors</p>
+          <h2>标准、专利与获奖</h2>
+        </div>
+        <div class="three-column">
+          <article class="content-card">
+            <h3>标准</h3>
+            <ul class="stack-list compact-list">
+              <li>IEEE 1851-2012，家电检测集成传感应用设计标准</li>
+              <li>IEEE 2402-2017，海洋观测复杂虚拟仪器设计标准</li>
+              <li>IEEE 2735-2022，物联网复杂虚拟仪器互操作标准</li>
+              <li>IEEE 1851-2023，家电检测集成传感应用设计标准</li>
+              <li>GB/T 33137-2016，基于传感器的产品检测软件集成接口规范</li>
+            </ul>
+          </article>
+          <article class="content-card">
+            <h3>专利</h3>
+            <ul class="stack-list compact-list">
+              <li>洪锋; 赵中宁; 姜雨菲; 陈佳璇; 冯源; 郭忠文; 融合水文数据的渔船历史轨迹数据集上采样方法, 2023-10-24, 中国, CN202311381996.0</li>
+              <li>洪锋; 赵中宁; 滕冠龙; 纪晨阳; 田景瑞; 黄海广; 刘超; 冯源; 郭忠文; 基于捕捞时序关系的短时捕捞努力量分布预测方法, 2021-06-04, 中国, CN202110627654.7</li>
+              <li>洪锋; 王阳; 姜雪婷; 姜雨霏; 鲍晨煜; 基于耳机逆向信号的电动牙刷口腔定位方法, 2023-02-06, 中国, CN202310067555.7</li>
+              <li>洪锋; 闫旭荣; 缪倩铃; 赵中宁; 杨志豪; 赵千雪; 基于触摸行为序列的智能手机使用情境识别方法, 2020-09-09, 中国, CN202010938901.0</li>
+              <li>洪锋; 齐健博; 滕冠龙; 蒋若冰; 刘超; 冯源; 郭忠文; 复用基站蜂窝信号的用户识别和计数方法, 2020-06-28, 中国, ZL 2020 1 0598922.2 </li>
+              <li>洪锋; 张钊; 储红伟; 金宗科; 冯源; 郭忠文; 基于智能手机的室内行人定位与跟踪方法, 2017-02-01, 中国, CN201410438351.0 （转让）</li>
+              <li> 洪锋; 游树娟; 魏美玉; 冯源; 郭忠文; 一种基于内嵌三维加速计的手持设备的身份认证方法, 2015-07-08, 中国, CN201510153477.8</li>
+            </ul>
+          </article>
+          <article class="content-card">
+            <h3>获奖</h3>
+            <ul class="stack-list compact-list">
+              <li>基于自研操作系统和AI赋能的物联网人才创新能力培养模式，山东省教学成果奖一等奖，2025</li>
+              <li>基于船位监控系统数据的海洋捕捞强度分布预测研究，论⽂作者：赵中宁，指导教师：洪锋，省优秀博⼠学位论⽂，2025</li>
+              <li>国际引领、体系创新、平台支撑，培养理实交融的物联网创新型人才，山东省教学成果奖一等奖，2022</li>
+              <li>海洋重大需求驱动的计算机类学科专业融合发展创新培养体系建设，山东省教学成果奖一等奖，2022</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="highlights">
+      <div class="wrapper">
+        <div class="section-heading">
+          <p class="eyebrow">Highlights</p>
+          <h2>代表性科研成果</h2>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card">
+            <img src="data/ToothFairyCover.jpg" alt="逐颗牙齿刷牙计时辅助工具">
+            <div>
+              <h3>逐颗牙齿刷牙计时辅助工具</h3>
+              <p>基于耳机逆向声传播的牙齿级刷牙辅助系统。</p>
+              <a class="text-link" href="https://www.bilibili.com/video/BV1Z14y1c7pi/" target="_blank" rel="noreferrer">观看演示</a>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="data/phoneContext.webp" alt="智能手机使用情境识别">
+            <div>
+              <h3>智能手机使用情境识别</h3>
+              <p>通过触摸行为识别用户当前使用情境。</p>
+              <a class="text-link" href="https://www.bilibili.com/video/BV1fw411o7Xh/" target="_blank" rel="noreferrer">观看演示</a>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="data/wavingAuthSenario.webp" alt="手持设备身份认证">
+            <div>
+              <h3>手持设备身份认证</h3>
+              <p>利用内嵌三轴加速度计实现自然交互式身份认证。</p>
+              <a class="text-link" href="https://www.bilibili.com/video/BV1oB4y1K7K5/" target="_blank" rel="noreferrer">场景视频</a>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="data/cellEye.webp" alt="蜂窝信号复用感知">
+            <div>
+              <h3>蜂窝信号复用感知</h3>
+              <p>利用基站蜂窝信号实现人员识别、计数与动作分析。</p>
+              <a class="text-link" href="https://www.bilibili.com/video/BV1V44y1z7zg/" target="_blank" rel="noreferrer">人员识别演示</a>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="data/oceanSense.webp" alt="OceanSense 部署实践">
+            <div>
+              <h3>OceanSense 部署实践</h3>
+              <p>海洋物联网系统的现场部署与运行实践。</p>
+              <a class="text-link" href="https://www.bilibili.com/video/BV18g411u7Su/" target="_blank" rel="noreferrer">观看视频</a>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="data/Trajectory/FVDR.png" alt="渔船关系发现系统">
+            <div>
+              <h3>FVRD 渔船关系发现系统</h3>
+              <p>通过轨迹交互时间构建渔船关系网络，识别作业群体结构。</p>
+              <a class="text-link" href="https://ieeexplore.ieee.org/abstract/document/9116983" target="_blank" rel="noreferrer">论文链接</a>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="data/Trajectory/HiTrip_results.jpg" alt="HiTrip 轨迹插值">
+            <div>
+              <h3>HiTrip 历史轨迹插值</h3>
+              <p>融合多源海洋数据，将 VMS 采样间隔从 2 小时提升到 3 分钟。</p>
+              <a class="text-link" href="https://www.sciencedirect.com/science/article/pii/S0029801823029724" target="_blank" rel="noreferrer">论文链接</a>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="data/Trajectory/HyFish.png" alt="HyFish 捕捞努力预测">
+            <div>
+              <h3>HyFish 捕捞努力预测</h3>
+              <p>融合海洋水文因子的捕捞努力量分布预测模型。</p>
+              <span class="text-muted">Frontiers of Marine Science</span>
+            </div>
+          </article>
+          <article class="highlight-card">
+            <img src="data/Trajectory/TCN_SST.png" alt="海表温度预测">
+            <div>
+              <h3>大范围海表温度预测</h3>
+              <p>基于时间卷积网络与物联网数据的印度洋 SST 长期预测。</p>
+              <a class="text-link" href="https://www.mdpi.com/1424-8220/22/4/1636" target="_blank" rel="noreferrer">论文链接</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent" id="recruitment">
+      <div class="wrapper">
+        <div class="callout">
+          <div>
+            <p class="eyebrow">Recruitment</p>
+            <h2>欢迎加入团队</h2>
+            <p>团队主要围绕物联网智能感知、轨迹大数据挖掘与海洋信息分析开展研究，欢迎研究生以及有科研兴趣的本科生联系交流。</p>
+          </div>
+          <ul class="stack-list">
+            <li>对智能感知或轨迹大数据挖掘有浓厚兴趣</li>
+            <li>具备较好的数学基础和科研训练意愿</li>
+            <li>了解信号分析、通信原理、机器学习或深度学习之一</li>
+            <li>具有 Android、Python 或 Matlab 开发经验者优先</li>
+          </ul>
+          <p class="callout-footnote">联系邮箱：hongfeng at ouc dot edu dot cn，通常 24 小时内回复。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="people">
+      <div class="wrapper">
+        <div class="section-heading">
+          <p class="eyebrow">Students</p>
+          <h2>学生与团队</h2>
+        </div>
+        <div class="two-column">
+          <article class="content-card prose-card">
+            <h3>研究生风采</h3>
+            <p>查看历届毕业生、在读学生、毕业合影与团队活动照片。</p>
+            <a class="button button-primary" href="People.html">进入学生页面</a>
+          </article>
+          <article class="content-card prose-card">
+            <h3>个人主页与合作延伸</h3>
+            <p>部分学生已建立个人学术主页，团队成员在智能感知、海洋计算和轨迹数据分析等方向持续开展研究。</p>
+            <a class="button button-secondary" href="index-eng.html">English Version</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-grid">
+      <div>
+        <strong>洪锋个人主页</strong>
+        <p>中国海洋大学 信息科学与工程学部</p>
+      </div>
+      <p>Last updated with the current local website content.</p>
     </div>
-
-    <!--==========================================
-                   Publications
-===========================================-->
-    <div class="row container" id="publications"><a name="Publications"></a>
-        <div class="row">
-            <div class="title">学术论文</div>
-            <hr>
-            <p>
-                请参见: <a href="https://www.researchgate.net/profile/Feng_Hong">ResearchGate</a>, <a
-                    href="https://scholar.google.com/citations?hl=zh-CN&user=BG3iIWAAAAAJ&view_op=list_works&sortby=pubdate">Google
-                    Scholar</a>
-            </p>
-        </div>
-    </div>
-
-
-    <!--==========================================
-                   Standards
-===========================================-->
-    <div class="row container" id="Standards"><a name="Standards"></a>
-        <div class="row">
-            <div class="title">标准、专利、获奖</div>
-            <hr>
-            <p style="margin: 16px 0;"> 标准</p>
-            <ol style="padding-left: 40px;list-style-type: auto;">
-                <li>
-                    国际标准，1851-2012 - IEEE Standard for Design Criteria of Integrated Sensor-Based Test Applications for
-                    Household Appliances，2012
-                </li>
-                <li>
-                    国际标准，2402-2017 - IEEE Standard Design Criteria of Complex Virtual Instruments for Ocean Observation，2017
-                </li>
-                <li>
-                    国际标准，2735-2022 - IEEE Standard for Interoperability of Complex Virtual Instruments for Internet of Things，2022
-                </li>
-                 <li>
-                    国际标准，1851-2023 - IEEE Standard for Design Criteria of Integrated Sensor-Based Test Applications for
-                    Household Appliances，2023
-                </li>
-                <li>
-                    中国标准，基于传感器的产品检测软件集成接口规范，GB/T 33137-2016，中华人民共和国国家质量监督检验检疫总局，2016.10.13
-                </li>
-            </ol>
-            <p style="margin: 16px 0;"> 专利</p>
-            <ol style="padding-left: 40px;list-style-type: auto;">
-                 <li>国家发明专利：基于捕捞时序关系的短时捕捞努力量分布预测方法；专利号：ZL 2021 1 0627654.7；第一位</li>
-                 <li>国家发明专利：复用基站蜂窝信号的用户识别和计数方法；专利号：ZL 2020 1 0598922.2；第一位</li>
-                 <li>国家发明专利：基于触摸行为的智能手机使用情境识别方法；专利号：ZL 2020 1 0938901.0；第一位</li>
-                 <li>国家发明专利：一种基于内嵌三位加速计的手持设备的身份认证方法，专利号：ZL 2015 1 0153477.8；第一位</li>
-                 <li>国家发明专利：基于智能手机的室内行人定位与跟踪方法，专利号：ZL 2014 1 0438531.0；第一位</li>            
-               
-            </ol>
-            <p style="margin: 16px 0;"> 获奖</p>
-            <ol style="padding-left: 40px;list-style-type: auto;">
-                <li>国际引领，体系创新，平台支撑，培养理实交融的物联网创新型人才，山东省教育厅，第九届山东省教学成果奖（高等教育类），省部一等奖，2022</li>
-                <li>海洋重大需求驱动的计算机类学科专业融合发展创新培养体系建设，山东省教育厅，第九届山东省教学成果奖（高等教育类），省部一等奖，2022</li>
-            </ol>
-        </div>
-    </div>
-
-
-    <!--==========================================
-                   Examples
-===========================================-->
-    <div class="row container"><a name="Examples"></a>
-        <div class="row">
-            <div class="title">科研成果示例</div>
-            <hr>
-        </div>        
-
-        <div class="title" style="float:middle;text-align:center;">智能感知相关研究</div>
-        <hr>
-
-        <div class="title" style="float:middle;">基于耳机逆向声传播的逐颗牙齿的刷牙计时辅助工具</div>
-        <hr>
-        <div id="cell1" style="width:50%;float:middle">
-            <a href="https://www.bilibili.com/video/BV1Z14y1c7pi/">
-                <img src="./data/ToothFairyCover.jpg" width=100% alt="基于耳机逆向声传播的逐颗牙齿的刷牙计时辅助工具" />
-                <p style=" text-align:center;">应用场景演示视频</p>
-            </a>
-        </div>
-
-        <div class="title" style="float:middle">基于触摸行为的智能手机使用情境识别</div>
-        <hr>
-        <div id="left" style="width:50%;float:middle;">
-            <a href="https://www.bilibili.com/video/BV1fw411o7Xh/">
-                <img src="./data/phoneContext.webp" width=100% alt="基于触摸行为的智能手机使用情境识别" />
-                <p style=" text-align:center;">应用场景演示视频</p>
-            </a>
-        </div>
-
-        <div class="title" style="float:middle">基于内嵌三位加速计的手持设备的身份认证</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <a href="https://www.bilibili.com/video/BV1oB4y1K7K5/">
-                <img src="./data/wavingAuthSenario.webp" width=95% alt="基于内嵌三位加速计的手持设备的身份认证演示视频" />
-                <p style=" text-align:center;">应用场景演示视频</p>
-            </a>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <a href="https://www.bilibili.com/video/BV1U44y1i7L4/">
-                <img src="./data/wavingAuthModel.webp" width=95% alt="基于内嵌三位加速计的手持设备的身份认证原理视频" />
-                <p style=" text-align:center;">认证原理和效果视频</p>
-            </a>
-        </div>
-
-        <div class="title" style="float:middle">复用基站蜂窝信号的智能感知技术</div>
-        <hr>
-        <div id="cell1" style="width:50%;float:left">
-            <a href="https://www.bilibili.com/video/BV1V44y1z7zg/">
-                <img src="./data/cellEye.webp" style="width:100%;float:left;" alt="复用基站蜂窝信号的用户识别和计数" />
-            </a>
-            <p style=" text-align:middle">复用基站蜂窝信号的人员进出识别和计数</p>
-        </div>
-        <div id="cell2" style="width:50%;float:right;">
-            <a href="https://www.bilibili.com/video/BV15p4y1S7As/">
-                <img src="./data/cellFit.webp" style="width:100%;float:right;" alt="复用基站蜂窝信号的健身动作识别和计数" />
-            </a>
-            <p style=" text-align:right;">复用基站蜂窝信号的健身动作识别和计数</p>
-        </div>
-
-        <div class="title" style="float:middle">海洋物联网系统OceanSense部署实践</div>
-        <hr>
-        <div id="left" style="width:100%;float:right;">
-            <a href="https://www.bilibili.com/video/BV18g411u7Su/">
-                <img src="./data/oceanSense.webp" width=60% alt="海洋物联网系统OceanSense部署实践" />
-            </a>
-        </div>
-
-        <div class="title" style="float:middle;text-align:center;">海洋轨迹大数据相关研究</div>
-        <hr>
-
-        <div class="title" style="clear: both;">FVRD：基于渔船轨迹的渔船关系发现系统</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\FVDR.png" width=95% alt="" />
-            <p style=" text-align:center;">瑞安市渔业船舶关系网络。(1-刺网;2-双拖; 3-捕虾; 4-单拖; 5-运输; 6-张网)</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本研究中，我们提出了一个渔船关系发现系统（FVRD）。FVRD计算渔船之间的相互作用时间，然后将其用作权重生成关系网络。<br>图示可以发现同种作业类型的渔业船舶能够被分为同一类，其连接较为紧密，不同作业类型的渔业船舶也能够较好的区分开，这证明FVRD模型能够较好的识别渔业船舶间的关系网络。</p>
-            <br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9116983" target="_blank" style="width:100%;">Huang, Haiguang; Cui, Xiaojun*; Bi, Xiaoming; Liu, Chao; Hong, Feng*; Guo, Shuai; FVRD: Fishing Vessels Relationships Discovery System Through Vessel Trajectory, IEEE Access, 2020, 8：112530-112538. SCIE.</a>
-        </div>
-
-        <div class="title" style="clear: both;">基于LSTM的拖网渔船VMS轨迹插值</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\cHsAndLstm.png" width=95% alt="LSTM模型与CHS方法在捕捞轨迹段上的补全效果示例" />
-            <p style=" text-align:center;">LSTM与CHS在捕捞轨迹段上的补全效果示例</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本文提出一种混合插值方案，将LSTM和CHS相结合进行缺失样本插入。在对传统轨迹插值方法cHs的效果进行评估的基础上，本研究设计基于LSTM的轨迹插值模型用于渔业船舶轨迹补全。<br>图示可以发现LSTM模型在轨迹段转弯处的补全效果明显优于CHS方法的补全结果。</p>
-            <br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9389435" target="_blank" style="width:100%;">Zhao, Zhongning; Tian, Ying; Hong, Feng*; Huang, Haiguang; Zhou, Shutian; Trawler Fishing Track Interpolation using LSTM for Satellite-based VMS Traces, IEEE/MTS OCEANS 2020, Singapore, 2020-10-5至2020-10-14. EI. </a>
-        </div>
-
-        <div class="title" style="clear: both;">基于Bi-LSTM的海上船舶网络轨迹数据传递算法</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\Bi_LSTM.png" width=95% alt="" />
-            <p style=" text-align:center;">Bi-LSTM模型未来轨迹预测随时间增加的误差分布图</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本研究中，我们通过双向长短时记忆（Bi-LSTM）模型开发了一种准确的长期轨迹预测模型。基于预测的轨迹，我们提出了一种基于预测结果的数据传输算法，以实现高效的通信性能。<br>图示为在采样率为3分钟情况下，东海拖网渔船未来一小时的轨迹点绝对误差分布。Bi-LSTM预测模型在1小时以内的误差均小于600米，达到了较高的预测精度。</p>
-            <br>
-            <a href="https://link.springer.com/chapter/10.1007/978-3-030-59016-1_25" target="_blank" style="width:100%;">Liu, Chao; Li, Yingbin; Jiang, Ruobing*; Lu, Qian; Guo, Zhongwen; Trajectory-Based Data Delivery Algorithm in Maritime Vessel Networks Based on Bi-LSTM, 15th International Conference on Wireless Algorithms, Systems, and Applications, WASA 2020, Qingdao, China, 2020-9-13至2020-9-15. EI.</a>
-        </div>
-
-        <div class="title" style="clear: both;">基于VMS和拖网渔船捕捞时序的捕捞努力分布短期预测</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\predictedFishingEffort.png" width=95% alt="" />
-            <p style=" text-align:center;">预测捕鱼努力分布</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本研究提出一种通过挖掘一种新的知识类型——拖网渔船捕捞时序关系，来进行捕捞努力分布短期预测的系统。
-基于捕捞时序关系，我们设计了一个卷积神经网络（CNN），以预测短期捕鱼努力的分布。<br>本研究提出的基于捕捞船舶关系的捕捞强度预测模型实现了空间分辨率为0.25° *0.25°，预测未来一周的周级别的捕捞强度分布预测，预测平均误差仅为6.95%。</p>
-            <br>
-            <a href="https://www.sciencedirect.com/science/article/pii/S0957417421009222" target="_blank" style="width:100%;">Zhao Zhongning; Hong Feng*; Huang Haiguang; Liu Chao; Feng Yuan; Guo Zhongwen; Short-term prediction of fishing effort distributions by discovering fishing chronology among trawlers based on VMS dataset, Expert Systems with Applications, 2021, 184(115512). SCIE, EI.</a>
-        </div>
-
-        <div class="title" style="clear: both;">HIT：基于深度学习的拖网渔船混合插值方法</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\HIT.png" width=95% alt="" />
-            <p style=" text-align:center;">HIT与CHS插值结果比较</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本研究提出了一种名为“拖网渔船混合插值模型（Hybrid Interpolation for Trawlers，简称HIT）”的插值模型。HIT基于boost learning设计，包括单层深度神经网络（1-DNN）和长短期记忆（LSTM）神经网络。1-DNN 提供航行状态下轨迹的插值，而 LSTM 则细化捕捞状态下的插值。<br>图示可以发现对于转弯行为，cHs只能根据速度和航向变化给出平滑的曲线。然而HIT可以学习历史的捕鱼行为模式，给出更精确的插值。</p>
-            <br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9705828" target="_blank" style="width:100%;">Guanlong Teng; Zhongning Zhao; Feng Hong*; Bin Wang; Haiguang Huang; HIT: Hybrid Interpolation for Trawlers based on Deep Learning, OCEANS 2021 San Diego - Porto, 2021-9-20至2021-9-23. EI.</a>
-        </div>
-
-        <div class="title" style="clear: both;">轨迹大数据驱动的网络特征提取和数据传输仿真器</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\Simulator.png" width=95% alt="" />
-            <p style="text-align: center;">渔业船舶轨迹大数据仿真器框架</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本研究中，我们提出了一个基于轨迹大数据的网络模拟器，具有大规模网络、特征提取和数据传输的交互式可视化功能。我们的模拟器包括数据预处理、网络特征提取、行为仿真三个核心模块。</p>
-            <br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9973601" target="_blank" style="width:100%;">Xiaohui Wang; Ruobing Jiang*; He Zhang; Chao Liu; Feng Hong; A Simulator Driven by Trajectory Big Data for Network Feature Extraction and Data Transmission, 2022 IEEE International Conference on Mobile Ad-hoc and Sensor Systems, Denver, Colorado, 2022-10-20至2022-10-22. EI.</a>
-        </div>
-
-        <div class="title" style="clear: both;">VDU：基于多源数据融合的拖网渔船VMS数据上采样</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\VDU.png" width=95% alt="" />
-            <p style=" text-align:center;">VDU与不同模型插值结果比较</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本文提出了一种基于多源数据融合的拖网渔船VMS数据集上采样（VDU）方法，该方法整合了额外的海洋环境因素（MEF），以帮助模型捕捉运动特征。</p>
-            <br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/10244460" target="_blank" style="width:100%;">Jiaxuan Chen; Zhongning Zhao; Feng Hong*; Haiguang Huang; VDU: VMS Dataset Upsampling via Multi-Source Data Fusion for Trawlers, OCEANS 2023 – Limerick, 2023-06-05至2023-06-08. EI</a>
-        </div>
-
-        <div class="title" style="clear: both;">HiTrip：利用深度学习基于多源数据的拖网渔船历史轨迹插值</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\HiTrip_results.jpg" width=95% alt="渔船轨迹上两端点间的插值轨迹结果（2小时采样周期）" />
-            <p style=" text-align:center;">渔船轨迹上两端点间的插值轨迹结果（2小时采样周期）</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本研究中，我们介绍一种深度学习方法：HiTrip。HiTrip利用VMS和海洋水文数据将VMS数据采样间隔从两小时变为三分钟。<br>HiTrip的高精度插值来源于所设计的深度学习网络有效综合了多种数据源（粗粒度捕捞强度、SSH、SSS和SST等）的时空特性。</p>
-            <br>
-            <a href="https://www.sciencedirect.com/science/article/pii/S0029801823029724" target="_blank" style="width:100%;">Zhongning Zhao; Jiaxuan Chen; Yuqi Shi; Feng Hong*; Guiyuan Jiang; Haiguang Huang; Jinhua Zhao; HiTrip: Historical trajectory interpolation for trawlers via deep learning on multi-source data, Ocean Engineering, 2024, 292(116588). SCIE, EI.</a>
-        </div>
-
-        <div class="title" style="clear: both;">HyFish：基于VMS和融合水文要素的捕捞努力分布预测</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\HyFish.png" width=95% alt="捕捞努力量分布序列预测每周平均预测误差对比" />
-            <p style=" text-align:center;">捕捞努力量分布序列预测每周平均预测误差对比</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">在定量化分析海洋水文要素场序列对捕捞努力量分布序列的影响的前提下，本研究提出融合海洋水文要素场的海洋捕捞努力量分布预测模型HyFish。<br>图示为将HyFish在整个预测期内的每周预测结果的平均RMSE值与现有典型工作进行对比。HyFish在测试期内的所有周均取得最低的平均RMSE，证明HyFish在预测精度上优于已有工作。</p>
-            <br>
-            <a href="#1" style="width:100%;">Yuqi Shi, Feng Hong*, Zhongning Zhao, Yufei Jiang, Shutian Zhou and Haiguang Huang. HyFish: Hydrological Factor Fusion for Prediction of Fishing Effort Distribution with VMS dataset. Frontiers of Marine Science.</a>
-        </div>
-
-        <div class="title" style="clear:both;text-align:center;">海洋大数据相关研究</div>
-        <hr>
-
-        <div class="title" style="clear: both;">基于时序卷积网络和物联网的长时间跨度，大范围，高精度印度洋海表温度预测</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\TCN_SST.png" width=95% alt="" />
-            <p style=" text-align:center;">2015年6月份海表面高度TCN预测结果（70°E-90°E，0°-10°S）</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">本研究中，我们基于物联网技术和时间卷积网络（TCN），对2014年至2018年印度洋的月平均海表温度进行了预测。研究发现，TCN可以准确预测长期海表温度（SST），为研究大规模海洋物理现象提供了基础。</p>
-            <br>
-            <a href="https://www.mdpi.com/1424-8220/22/4/1636" target="_blank" style="width:100%;">Tianying Sun; Yuan Feng; Chen Li; Xingzhi Zhang; High Precision Sea Surface Temperature Prediction of Long Period and Large Area in the Indian Ocean Based on the Temporal Convolutional Network and Internet of Things, Sensors, 2022, 22(4): 1636. SCIE, EI.</a>
-        </div>
-
-        <div class="title" style="clear: both;">基于convLSTM的长期印度洋偶极子（IOD）指数预测</div>
-        <hr>
-        <div id="left" style="width:50%;float:left;">
-            <img src="data\Trajectory\IOD.png" width=95% alt="" />
-            <p style=" text-align:center;">2015年convLSTM模型和CFSv2模型的预测IOD指数曲线对比</p>
-        </div>
-        <div id="right" style="width:50%;float:right;">
-            <p style="width:100%;float:right;">在本文中，使用卷积长短时记忆（convLSTM）神经网络构建深度学习模型，用于预测未来七个月的海表温度并计算IOD指数。</p>
-            <br>
-            <a href="https://www.mdpi.com/2072-4292/14/3/523" target="_blank" style="width:100%;">Chen Li; Tianying Sun; Yuan Feng; Xingzhi Zhang; 	Long Term Indian Ocean Dipole (IOD) Index Predication Used Deep Learning by convLSTM, Remote Sensing, 2022, 14(3): 523. SCIE, EI.</a>
-        </div>
-
-    </div>    
-
-    <!--==========================================
-                   Recruitment
-===========================================-->
-    <div class="row container"><a name="Recruitment"></a>
-        <div class="row"><br>
-            <div class="title">招生要求</div>
-            <hr>
-
-            <p>我们的团队主要面向物联网智能感知、轨迹大数据挖掘展开研究。招生要求：<br>
-                1、对智能感知或轨迹大数据挖掘有强烈研究兴趣；<br>
-                2、有良好的数学基础（高等数学、线性代数、概率论）；<br>
-                3、具备信号分析、通信原理相关的基本知识或数据统计、机器学习、深度学习基础知识；<br>
-                4、具有Android、Python或Matlab开发经验和动手能力。<br>
-
-                *同时欢迎未来想从事科研工作的本科生加入团队。<br>
-                *请邮件联系我（hongfeng at ouc dot edu dot cn），邮件通常会在24小时内回复。<br>
-            </p>
-
-        </div>
-    </div>
-
-    <!--==========================================
-                  People
-===========================================-->
-    <div class="row container"><a name="People"></a>
-        <div class="row"><br>
-            <div class="title">研究生风采</div>
-            <hr>
-            <p>
-
-                <body>
-                    <table class="tablesite" width="100%" cellspacing="1" cellpadding="0" border="0">
-                        <tbody>
-
-
-                            <tr>
-                                
-                                <td class="righttd" bgcolor="f7f7f7">
-
-                                    <div class="contentlimit">
-                                        <div class="infobox" frag="面板3">
-                                            <div class="article" frag="窗口3" portletmode="simpleArticleAttri">
-
-                                                <div class="entry">
-                                                    <div class="read">
-                                                        <div class="wp_articlecontent">
-                                                            <style>
-                                                                .biaoti3 {
-                                                                    font-size: 36px;
-                                                                }
-                                                            </style>
-    <!--毕业生-->                                                            
-                                                            <h1
-                                                                style="box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;background-color:#ffffff;">
-                                                                <span style="font-size:24px;">Graduated Students</span>
-                                                            </h1>
-                                                            <p><br></p>
-                                                            <p style="font-family:'times new roman';font-size:16px;">
-                                                                <span
-                                                                    style="font-family:times new roman;font-size:16px;"></span>
-                                                            </p>
-                                                            <p>
-                                                            </p>
-                                                            <table class="wp_editor_art_table"
-                                                                style="border:0px solid black;width:752px;" width="100%"
-                                                                cellspacing="0" cellpadding="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null">
-                                                                            <p><img src="People_files/d34d74a8-7701-486f-84d0-6cfc1ef60f11.jpg"
-                                                                                    original_name="1aa7e02cd6a4955b376833193075625.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/d34d74a8-7701-486f-84d0-6cfc1ef60f11_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/2c40a87d-b566-4af3-be60-48adba57479a_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'6c74e6c7753192f291472715fefa603.jpg'}">
-                                                                            </p>
-                                                                            <p><span
-                                                                                    style="font-family:微软雅黑, microsoft yahei;font-size:16px;text-align:center;background-color:#ffffff;"></span>
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2013
-                                                                                    Shujuan You</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null">
-                                                                            <p><img src="People_files/0a8272cc-4020-4923-aa92-8c87caa275a0.jpg"
-                                                                                    original_name="fa815df1aa143ffa06e61b569f9be59.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/0a8272cc-4020-4923-aa92-8c87caa275a0_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/cef2c04c-7fcc-4f4c-a129-924b529bae03_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'fa815df1aa143ffa06e61b569f9be59.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2013 Meiyu
-                                                                                    Wei</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null">
-                                                                            <p>
-                                                                               <img style="float:none;"
-                                                                                    src="People_files/9a584699-fc81-40b4-ace9-73633baf19ea.jpg"
-                                                                                    original_name="2b684b0b06d5faf114ee89d4f82380b.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/9a584699-fc81-40b4-ace9-73633baf19ea_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/b4e61724-305e-4a4e-9668-f588ba431a4e_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'2b684b0b06d5faf114ee89d4f82380b.jpg'}"
-                                                                                    >                                                                               
-                                                                            </p>
-                                                                            <a href="https://yanniyang-polyu.github.io/">
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2014 Yanni
-                                                                                  Yang</span></h1>
-                                                                            </a>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null">
-                                                                            <p><img style="float:none;"
-                                                                                    src="People_files/12a679f3-1b59-406b-b940-a4b4cb9ea9b0.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/12a679f3-1b59-406b-b940-a4b4cb9ea9b0_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'1.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2014 Xiang
-                                                                                    Wang</span><br></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null"><br></td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null"><br></td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null"><br></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null">
-                                                                            <p><img style="float:none;"
-                                                                                    src="People_files/1dcd930f-b451-4818-8238-b742fc82c5b8.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/1dcd930f-b451-4818-8238-b742fc82c5b8_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'0634a73f2dde49bfd25c4dc57cf10e8.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2014 Yuan
-                                                                                    zong</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null">
-                                                                            <p><img src="People_files/cc4e6abe-5222-426f-b0e7-2ffdab0a3f8b.jpg"
-                                                                                    original_name="295ad0b7f6e6994c45fd5b8db25c475.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/cc4e6abe-5222-426f-b0e7-2ffdab0a3f8b_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/5b575878-514a-4444-b7ce-00870a38730d_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'微信图片_20190818184236.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2015 Liang
-                                                                                    Zhang</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null">
-                                                                            <p><img src="People_files/cccd629e-00b5-4055-aadb-29df2ef3d7da.jpg"
-                                                                                    original_name="07b1c686b96c984d227ff7b9511f22a.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/cccd629e-00b5-4055-aadb-29df2ef3d7da_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/64b9f503-308a-455b-b934-515281e7fc8b_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'07b1c686b96c984d227ff7b9511f22a.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2015
-                                                                                    Qingxin Xia</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null">
-                                                                            <p><img src="People_files/4efd629f-e575-43ab-ba52-8588d4cc1e79.jpg"
-                                                                                    original_name="22b5c05190b95064822b3b1087778c1.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4efd629f-e575-43ab-ba52-8588d4cc1e79_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/2c40a87d-b566-4af3-be60-48adba57479a_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'6c74e6c7753192f291472715fefa603.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span
-                                                                                    style="font-size:16px;">2015&nbsp;Yong
-                                                                                    Zhen</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null"><br></td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null"><br></td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"
-                                                                            valign="null"><br></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171">
-                                                                            <p><img src="People_files/66a13c57-53be-49b3-8738-dc24060175e5.jpg"
-                                                                                    original_name="08b5a73858b61e3a7c018693793e902.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/66a13c57-53be-49b3-8738-dc24060175e5_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/6198cc26-09c7-4e06-8531-dcadf06edf30_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'08b5a73858b61e3a7c018693793e902.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2016
-                                                                                    Yankai Dong</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171">
-                                                                            <p><img src="People_files/ffa3dbc1-1bc8-4d4d-8234-a3738d2c670c.jpg"
-                                                                                    original_name="6c74e6c7753192f291472715fefa603.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/ffa3dbc1-1bc8-4d4d-8234-a3738d2c670c_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/2c40a87d-b566-4af3-be60-48adba57479a_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'6c74e6c7753192f291472715fefa603.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span
-                                                                                    style="font-size:16px;">2016&nbsp;Zexin
-                                                                                    Wu</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171">
-                                                                            <p><img src="People_files/a76d8672-1578-4c8e-82c9-5e9e01126994.jpg"
-                                                                                    original_name="b4eaa7788a0cfd67c390c0ff8f288cf.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/fb2e9a45-fc78-420c-ab40-f84c4fdad305_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'b4eaa7788a0cfd67c390c0ff8f288cf.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2016
-                                                                                    Xurong Yan</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171">
-                                                                            <p><img src="People_files/399fb3e2-987e-464d-96e0-4048e2015cd7.jpg"
-                                                                                    original_name="608a3fa6301dfc6a9bbbe546b993385.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/399fb3e2-987e-464d-96e0-4048e2015cd7_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/09ca7204-798c-4691-8706-77b08d7fa91c_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'608a3fa6301dfc6a9bbbe546b993385.jpg'}">
-                                                                            </p>
-                                                                            <h1
-                                                                                style="background-color:#ffffff;box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;text-align:center;">
-                                                                                <span style="font-size:16px;">2016
-                                                                                    Lingyun Wang</span></h1>
-                                                                        </td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"><br></td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"><br></td>
-                                                                        <td style="word-break:break-all;" rowspan="1"
-                                                                            colspan="1" border="0" width="171"><br></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="height: 257.23px;"><img
-                                                                                src="People_files/2ab4c8b1-6195-43e2-a3b5-05559fd5bded.jpg"
-                                                                                original_name="cea09be16782cd9b6d964e372e2e1db.jpg"
-                                                                                original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/2ab4c8b1-6195-43e2-a3b5-05559fd5bded_d.jpg"
-                                                                                original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/2c40a87d-b566-4af3-be60-48adba57479a_d.jpg"
-                                                                                data-layer="photo"
-                                                                                sudyfile-attr="{'title':'6c74e6c7753192f291472715fefa603.jpg'}">
-                                                                            <p
-                                                                                style="font-size:16px;text-align: center;">
-                                                                                2017 QihangBing</p>
-                                                                        </td>
-                                                                        <td><img style="width:200px;height:196px;"
-                                                                                src="People_files/6848b0d3-95c4-48d3-a711-f1a11bd34d8d.jpg"
-                                                                                original_name="b30914b154f4c9029c57899c85f4475.jpg"
-                                                                                original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/6848b0d3-95c4-48d3-a711-f1a11bd34d8d_d.jpg"
-                                                                                original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/cfc52158-578e-4389-9148-3b235397e0be_d.jpg"
-                                                                                data-layer="photo"
-                                                                                sudyfile-attr="{'title':'b30914b154f4c9029c57899c85f4475.jpg'}"
-                                                                                width="200" vspace="0" hspace="0"
-                                                                                height="196" border="0">
-                                                                            <p
-                                                                                style="font-size:16px;text-align: center;">
-                                                                                2017 Yue Xu</p>
-                                                                        </td>
-                                                                        <td><img style="font-family:宋体;font-size:14px;float:none;"
-                                                                                src="People_files/226796d5-2141-4356-ba85-5ea9caeca744.jpg"
-                                                                                original_name="b20b4b0c9e5ac7edca694d4e1d24305.jpg"
-                                                                                original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/226796d5-2141-4356-ba85-5ea9caeca744_d.jpg"
-                                                                                original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/5e1b9911-9c7f-448b-abd2-b2a2e4144621_d.jpg"
-                                                                                data-layer="photo"
-                                                                                sudyfile-attr="{'title':'8acfaee375cfdd9c82265bf106a27bb.jpg'}">
-                                                                            <p
-                                                                                style="font-size:16px;text-align: center;">
-                                                                                2017 Ying Tian</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p><img src="People_files/85c8e5da-4c67-4ecf-acc9-03fd906ef4e4.jpg"
-                                                                                    original_name="微信图片_20190825104807.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/85c8e5da-4c67-4ecf-acc9-03fd906ef4e4_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/2c40a87d-b566-4af3-be60-48adba57479a_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'6c74e6c7753192f291472715fefa603.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;"><span
-                                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2018
-                                                                                        Jianbo Qi</span></span></p>
-                                                                        </td>
-                                                                        <td><br></td>
-                                                                        <td><br></td>
-                                                                        <td><br></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center;"><img
-                                                                                    style="font-size:2.2rem;"
-                                                                                    src="People_files/50b03bbe-8586-4de6-bc1a-55e7da9f0260.jpg"
-                                                                                    original_name="83c46118eb712f1627d87a329f4e41c.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/50b03bbe-8586-4de6-bc1a-55e7da9f0260_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/6198cc26-09c7-4e06-8531-dcadf06edf30_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'08b5a73858b61e3a7c018693793e902.jpg'}"><br>
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2018
-                                                                                    Minghan Jiang</span></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center;"><img
-                                                                                    src="People_files/d40cdc61-b50f-492a-96fb-ab1b7b44a4fe.jpg"
-                                                                                    original_name="1.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/09ca7204-798c-4691-8706-77b08d7fa91c_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'608a3fa6301dfc6a9bbbe546b993385.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">2018
-                                                                                    Zhaoran Huo</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center;"><img
-                                                                                    src="People_files/cedae84b-7852-4157-95c4-41ef4e213df7.jpg"
-                                                                                    original_name="1.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/09ca7204-798c-4691-8706-77b08d7fa91c_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'608a3fa6301dfc6a9bbbe546b993385.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">2019
-                                                                                     Guanlong Teng</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center;"><img
-                                                                                    src="People_files/137d5102-56c7-41e2-bd56-7ff80e4e5861.jpg"
-                                                                                    original_name="1.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/09ca7204-798c-4691-8706-77b08d7fa91c_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'608a3fa6301dfc6a9bbbe546b993385.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">2019
-                                                                                    Jiao Liu</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171"><br>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center;"><img
-                                                                                    style="font-size:2.2rem;"
-                                                                                    src="People_files/7eeef799-0b39-48fd-a7a1-204541b1a04c.jpg"
-                                                                                    original_name="83c46118eb712f1627d87a329f4e41c.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/50b03bbe-8586-4de6-bc1a-55e7da9f0260_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/6198cc26-09c7-4e06-8531-dcadf06edf30_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'08b5a73858b61e3a7c018693793e902.jpg'}"><br>
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2020
-                                                                                    Chenyang Ji</span></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center;"><img
-                                                                                    src="People_files/7acccdfe-6c6b-4d4b-8ee4-60bbe59c759f.jpg"
-                                                                                    original_name="1.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/09ca7204-798c-4691-8706-77b08d7fa91c_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'608a3fa6301dfc6a9bbbe546b993385.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">2020
-                                                                                    Xueting Jiang</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center;"><img
-                                                                                    src="People_files/d7c9b496-ea09-433a-b9e2-03786a3f665f.jpg"
-                                                                                    original_name="1.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/09ca7204-798c-4691-8706-77b08d7fa91c_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'608a3fa6301dfc6a9bbbe546b993385.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">2020
-                                                                                    Jingrui Tian</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center;"><img
-                                                                                    src="People_files/557657a0-30ba-4b35-a456-4eedd0b200fd.jpg"
-                                                                                    original_name="1.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/09ca7204-798c-4691-8706-77b08d7fa91c_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'608a3fa6301dfc6a9bbbe546b993385.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">2020
-                                                                                    Yang Wang</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171"><br>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/d6bdc66e-3609-4b61-9c3e-2ef27f333d22.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/d6bdc66e-3609-4b61-9c3e-2ef27f333d22_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'赵师兄.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center;"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;"><span
-                                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2017&nbsp;
-                                                                                        Zhongning Zhao</span></span></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center"><img
-                                                                                    src="People_files/101ea5f0-ab5d-45ab-839f-b1deddfc850d.jpg"
-                                                                                    original_name="刘嘉雯.jpg"
-                                                                                    original_src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/101ea5f0-ab5d-45ab-839f-b1deddfc850d_d.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/8d9fe685-7f3b-4b5a-b207-f3b58d0963b9_d.jpg"
-                                                                                    data-layer="photo"
-                                                                                    sudyfile-attr="{'title':'3afe636392d36ca2847402a89dbb7d2.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2020
-                                                                                    Jiawen Liu</span><br></p>
-                                                                        </td>
-                                                                        
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/ddc17ce1-6d59-44f1-8287-32debb5446fc.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/ddc17ce1-6d59-44f1-8287-32debb5446fc_d.jpg"
-                                                                                    style="width:200px;height:200px;"
-                                                                                    sudyfile-attr="{'title':'张睿.jpg'}"
-                                                                                    title="2021 Rui Wang"
-                                                                                    original_name="2021 Rui Wang"
-                                                                                    width="200" vspace="0" hspace="0"
-                                                                                    height="200" border="0"></p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2021
-                                                                                    Rui Zhang</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p style="text-align:center"><img
-                                                                                    data-layer="photo"
-                                                                                    src="People_files/d00d7c60-c9b1-462f-9cb6-e744ab9ed47c.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/d00d7c60-c9b1-462f-9cb6-e744ab9ed47c_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'时、.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2021
-                                                                                    Yuqi Shi</span><br></p>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/4dd56aa9-4324-4da6-ad10-08b03de5eaaf.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2021
-                                                                                    Zhiyuan Li</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Jiaxuan Chen_2021.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2021
-                                                                                    Jiaxuan Chen</span><br></p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <table>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td><br></td>
-                                                                        <td><br></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <hr>
-                                                            <h1
-                                                                style="box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;background-color:#ffffff;">
-                                                                <span style="font-size:24px;"><br></span></h1>
-                                                            <h1
-                                                                style="box-sizing:border-box;font-size:2.2rem;margin:0px 0px 0.5rem;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-weight:500;line-height:1.2;color:#333333;opacity:1;background-color:#ffffff;">
-    <!--在校生-->
-                                                                <span style="font-size:24px;">Current
-                                                                    Students</span><br></h1>
-                                                            <p><span style="font-size:24px;"><br></span></p>
-                                                            <p><span style="font-size:24px;"><br></span></p>
-                                                            <table class="wp_editor_art_table"
-                                                                style="font-size:14px;border:0px solid black;width:752px;"
-                                                                width="100%" cellspacing="0" cellpadding="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Yufei Jiang_2022.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2022
-                                                                                    Yufei Jiang</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Wei Xinag_2022.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2022
-                                                                                    Wei Xiang</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Chenyu Bao_2022.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2022
-                                                                                    Chenyu Bao</span><br></p>
-                                                                        </td>
-                                                                            <td rowspan="1" colspan="1" width="171">
-                                                                                <p><img data-layer="photo"
-                                                                                        src="People_files/Fangming Tian_2022.jpg"
-                                                                                        original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                        style="float:none;"
-                                                                                        sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                                </p>
-                                                                                <p style="text-align:center"><span
-                                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2022
-                                                                                        Fangming Tian</span><br></p>
-                                                                            </td>
-                                                                        <td rowspan="1" colspan="1" width="171"><br>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Guitong Yang_2022.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2022
-                                                                                    Guitong Yang</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Hao Zhu_2022.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2022
-                                                                                    Hao Zhu</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Linkai Nie_2022.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2022
-                                                                                    Linkai Nie</span><br></p>
-                                                                        </td>
-                                                                            <td rowspan="1" colspan="1" width="171">
-                                                                                <p><img data-layer="photo"
-                                                                                        src="People_files/Siyuan Lin_2022.jpg"
-                                                                                        original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                        style="float:none;"
-                                                                                        sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                                </p>
-                                                                                <p style="text-align:center"><span
-                                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2022
-                                                                                        Siyuan Lin</span><br></p>
-                                                                            </td>
-                                                                        <td rowspan="1" colspan="1" width="171"><br>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Qingbin Li_2023.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2023
-                                                                                    Qingbin Li</span><br></p>
-                                                                        </td>
-                                                                            <td rowspan="1" colspan="1" width="171">
-                                                                                <p><img data-layer="photo"
-                                                                                        src="People_files/Rui Zhang_2023.jpg"
-                                                                                        original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                        style="float:none;"
-                                                                                        sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                                </p>
-                                                                                <p style="text-align:center"><span
-                                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2023
-                                                                                        Rui Zhang</span><br></p>
-                                                                            </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/Wenbin Liu_2023.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李志远.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2023
-                                                                                    Wenbin Liu</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/2023_Xuanli_Li.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'李宣利.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2023
-                                                                                    Xuanli Li</span><br></p>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/2024_Jian_Zhuang.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'庄健.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2024
-                                                                                    Jian Zhuang</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/2024_Yuanqi_Gao.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'高源启.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2024
-                                                                                    Yuanqi Gao</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/2024_Tiantian_He.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'何甜甜.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2024
-                                                                                    Tiantian He</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/2024_Qiance_Zang.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'臧千策.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2024
-                                                                                    Qiance Zang</span><br></p>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/2024_Tianyi_Zhang.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'张天翊.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2024
-                                                                                    Tianyi Zhang</span><br></p>
-                                                                        </td>
-                                                                        <td rowspan="1" colspan="1" width="171">
-                                                                            <p><img data-layer="photo"
-                                                                                    src="People_files/2024_Jiangtao_Zhao.jpg"
-                                                                                    original-src="/_upload/article/images/c5/ee/74cb3b3b4d29a53f4a08da32eaa6/4dd56aa9-4324-4da6-ad10-08b03de5eaaf_d.jpg"
-                                                                                    style="float:none;"
-                                                                                    sudyfile-attr="{'title':'赵江涛.jpg'}">
-                                                                            </p>
-                                                                            <p style="text-align:center"><span
-                                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;text-align:center;background-color:#ffffff;">2024
-                                                                                    Jiangtao Zhao</span><br></p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <hr>
-                                                            <p><br></p>                                                        
-                                                            <p style="font-size:24px;font-family:times new roman;">
-                                                                <strong><span
-                                                                        style="color:#222222;background-color:#f8f9fa;font-size:24px;font-family:'times new roman';">Graduates</span>:&nbsp;</strong>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;">
-                                                                <strong><br></strong></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">Graduated
-                                                                    in 2011-Zongke Jin,Tijiang Shan, Duan Huang</span>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;"><br></span>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;background-color:#ffffff;font-size:16px;">Graduated
-                                                                    in 2012</span><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:16px;">-Xiqing
-                                                                    Zhang, Chunlei Guo</span></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:16px;"><br></span>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                        style="font-size:16px;">Graduated in
-                                                                        2013</span></span><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">-Hongwei
-                                                                    Chu, XiuYan Zhu, Lijian Wang, Yan Hou</span></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                        style="font-size:16px;"><br></span></span></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                        style="font-size:16px;">Graduated in
-                                                                        2014</span></span><span
-                                                                    style="font-size:16px;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;">-Bozhen
-                                                                    Yang, Yongtuo Zhang</span><br></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;"><span
-                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                            style="font-size:16px;"><br></span></span></span>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;"><span
-                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                            style="font-size:16px;">Graduated in
-                                                                            2015</span></span><span
-                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;">-Yuliang
-                                                                        Zhang</span></span></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                        style="font-size:16px;"><br></span></span></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                        style="font-size:16px;">Graduated in
-                                                                        2016</span></span><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">-Shujuan
-                                                                    You, Meiyu Wei</span><br></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;"><span
-                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;margin:0px;padding:0px;font-size:16px;"><br></span></span>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                        style="font-size:16px;">Graduated in
-                                                                        2017</span></span><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">-</span><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:16px;">Yanni
-                                                                    Yang, Yuan Zong, QianQian Zhou, Xiang Wang, and Fei
-                                                                    Liu;</span></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:16px;"><br></span>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                        style="font-size:16px;">Graduated in
-                                                                        2018</span></span><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">-Liang
-                                                                    Zhang, Qingxin Xia, Yong Zhen</span></p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;"><br></span>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;"><span
-                                                                        style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                            style="font-size:16px;">Graduated in
-                                                                            2019</span></span><span
-                                                                        style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;">-Lingyun
-                                                                        Wang, Zexin Wu, Yankai Dong, Xurong
-                                                                        Yan&nbsp;</span></span></p>
-                                                              <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;"><br></span>
-                                                            </p>
-                                                            <p style="font-size:24px;font-family:times new roman;"><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;margin:0px;padding:0px;font-size:21px;"><span
-                                                                        style="font-size:16px;">Graduated in
-                                                                        2020</span></span><span
-                                                                    style="background-color:#ffffff;color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;font-size:16px;">-Yuanqi Gao, Qihang Bing
-                                                                    </span></p>
-                                                            <p><br><span
-                                                                    style="margin:0px;padding:0px;font-size:21px;"></span>
-                                                            </p>
-                                                            <hr>
-                                                            <p><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, 'times new roman', serif;background-color:#ffffff;font-size:24px;"><br></span>
-                                                            </p>
-                                                            <p><strong><span
-                                                                        style="color:#333333;background-color:#ffffff;font-size:24px;font-family:'times new roman';">Graduation
-                                                                        photos</span></strong></p>
-                                                            <p><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;background-color:#ffffff;"></span>
-                                                            </p>
-                                                            <div class="wp-display-wrapper wp-display-wrapper-display1"
-                                                                contenteditable="false">&nbsp;<div
-                                                                    class="sudy-imgs picSlideWrap clearfix" type="1"
-                                                                    data-setting="{&quot;width&quot;:1000,&quot;height&quot;:270,&quot;posterWidth&quot;:640,&quot;posterHeight&quot;:270,&quot;scale&quot;:0.2,&quot;dealy&quot;:&quot;2000&quot;, &quot;algin&quot;:&quot;middle&quot;}">
-                                                                    <div class="imgnav imgnav1">
-                                                                        <div class="img"><img
-                                                                                src="People_files/19fc4fad-62d0-4a3b-92fc-82570e936088.jpg"
-                                                                                style="display: inline;"><img
-                                                                                src="People_files/76ba15cb-029f-45ac-abda-2ca0b77b0c34.jpg"><img
-                                                                                src="People_files/afecc0c3-acb6-4f93-995a-8c23a9972b0c.jpg"><img
-                                                                                src="People_files/96d552aa-ffa8-482d-a8f6-d74bdca6552a.jpg"><img
-                                                                                src="People_files/f99f43ef-189a-4e66-b382-81db8faafea3.jpg"><img
-                                                                                src="People_files/1fa5df9c-9476-4d5d-b997-adf95b8885d4.jpg">
-                                                                            <div class="front" title="上一张"><a
-                                                                                    href="javascript:void(0)"
-                                                                                    class="pngFix"></a></div>
-                                                                            <div class="next" title="下一张"><a
-                                                                                    href="javascript:void(0)"
-                                                                                    class="pngFix"></a></div>
-                                                                        </div>
-                                                                        <div class="cbtn">
-                                                                            <div class="cSlideUl">
-                                                                                <ul>
-                                                                                    <li class="hov"><img
-                                                                                            src="People_files/19fc4fad-62d0-4a3b-92fc-82570e936088.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2012"></imgtitle>
-                                                                                        <tt>1/6</tt>
-                                                                                    </li>
-                                                                                    <li><img
-                                                                                            src="People_files/76ba15cb-029f-45ac-abda-2ca0b77b0c34.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2013">2013</imgtitle>
-                                                                                        <tt>2/6</tt>
-                                                                                    </li>
-                                                                                    <li><img
-                                                                                            src="People_files/afecc0c3-acb6-4f93-995a-8c23a9972b0c.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2015">2015</imgtitle>
-                                                                                        <tt>3/6</tt>
-                                                                                    </li>
-                                                                                    <li><img
-                                                                                            src="People_files/96d552aa-ffa8-482d-a8f6-d74bdca6552a.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2017">2017</imgtitle>
-                                                                                        <tt>4/6</tt>
-                                                                                    </li>
-                                                                                    <li><img
-                                                                                            src="People_files/f99f43ef-189a-4e66-b382-81db8faafea3.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2018">2018</imgtitle>
-                                                                                        <tt>5/6</tt>
-                                                                                    </li>
-                                                                                    <li><img
-                                                                                            src="People_files/1fa5df9c-9476-4d5d-b997-adf95b8885d4.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2019">2019</imgtitle>
-                                                                                        <tt>6/6</tt>
-                                                                                    </li>
-                                                                                    <li><img
-                                                                                            src="People_files/Graduation2022.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2019">2022</imgtitle>
-                                                                                        <tt>6/6</tt>
-                                                                                    </li>
-                                                                                    <li><img
-                                                                                            src="People_files/gr2.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2019">2023</imgtitle>
-                                                                                        <tt>6/6</tt>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <hr>
-                                                            <p><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;background-color:#ffffff;"><br></span>
-                                                            </p>
-                                                            <p><strong><span
-                                                                        style="color:#333333;background-color:#ffffff;font-size:24px;font-family:'times new roman';">Activities</span></strong>
-                                                            </p>
-                                                            <p><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;font-size:16px;background-color:#ffffff;"></span>
-                                                            </p>
-                                                            <div class="wp-display-wrapper wp-display-wrapper-display1"
-                                                                contenteditable="false">&nbsp;<div
-                                                                    class="sudy-imgs picSlideWrap clearfix" type="1"
-                                                                    data-setting="{&quot;width&quot;:1000,&quot;height&quot;:270,&quot;posterWidth&quot;:640,&quot;posterHeight&quot;:270,&quot;scale&quot;:0.2,&quot;dealy&quot;:&quot;2000&quot;, &quot;algin&quot;:&quot;middle&quot;}">
-                                                                    <div class="imgnav imgnav2">
-                                                                        <div class="img"><img
-                                                                                src="People_files/22480e8b-c9fd-4d9b-89cb-fbf20538e46f.jpg"
-                                                                                style="display: inline;"><img
-                                                                                src="People_files/27804f54-5cbf-4b7a-9406-8f98885c8cf4.jpg"><img
-                                                                                src="People_files/20f76c5a-8439-410b-84e2-e6bc5f36a2d3.jpg"><img
-                                                                                src="People_files/6d8bfcf6-0112-4d9e-9136-7011335f7688.jpg"><img
-                                                                                src="People_files/dd7f28d7-b7a3-4976-8490-b70a1e0e4d87.jpg"><img
-                                                                                src="People_files/f0e43ba5-14b6-44c4-8069-ac49daa757f8.jpg"><img
-                                                                                src="People_files/2113e6d9-7c4d-459d-8691-a8b532f4d422.jpg"><img
-                                                                                src="People_files/486a4c2f-dc9e-441d-83fb-947d698c51d4.jpg"><img
-                                                                                src="People_files/bad2e201-e060-4b0d-b6fe-700ac6c9014a.jpg">
-                                                                            <div class="front" title="上一张"><a
-                                                                                    href="javascript:void(0)"
-                                                                                    class="pngFix"></a></div>
-                                                                            <div class="next" title="下一张"><a
-                                                                                    href="javascript:void(0)"
-                                                                                    class="pngFix"></a></div>
-                                                                        </div>
-                                                                        <div class="cbtn">
-                                                                            <div class="cSlideUl">
-                                                                                <ul>
-                                                                                    
-                                                                                    <li><img
-                                                                                        src="People_files/22480e8b-c9fd-4d9b-89cb-fbf20538e46f.jpg">
-                                                                                    <imgtitle style="width: 100px;"
-                                                                                        title="018-13-19">2016-09-01
-                                                                                    </imgtitle><tt>6/9</tt>
-                                                                                </li>
-                                                                                <li><img
-                                                                                    src="People_files/27804f54-5cbf-4b7a-9406-8f98885c8cf4.jpg">
-                                                                                <imgtitle style="width: 100px;"
-                                                                                    title="018-13-19">2018-04-30
-                                                                                </imgtitle><tt>6/9</tt>
-                                                                            </li>
-                                                                            <li><img
-                                                                                src="People_files/20f76c5a-8439-410b-84e2-e6bc5f36a2d3.jpg">
-                                                                            <imgtitle style="width: 100px;"
-                                                                                title="018-13-19">2018-08-01
-                                                                            </imgtitle><tt>6/9</tt>
-                                                                        </li>
-                                                                        <li><img
-                                                                            src="People_files/6d8bfcf6-0112-4d9e-9136-7011335f7688.jpg">
-                                                                        <imgtitle style="width: 100px;"
-                                                                            title="018-13-19">2018-12-19
-                                                                        </imgtitle><tt>6/9</tt>
-                                                                    </li>
-                                                                    <li><img
-                                                                        src="People_files/dd7f28d7-b7a3-4976-8490-b70a1e0e4d87.jpg">
-                                                                    <imgtitle style="width: 100px;"
-                                                                        title="018-13-19">2018-10-10
-                                                                    </imgtitle><tt>6/9</tt>
-                                                                </li>
-                                                                                    <li><img
-                                                                                            src="People_files/f0e43ba5-14b6-44c4-8069-ac49daa757f8.jpg">
-                                                                                        <imgtitle style="width: 100px;"
-                                                                                            title="2018-13-19">2018-13-19
-                                                                                        </imgtitle><tt>6/9</tt>
-                                                                                    </li>
-                                                                                    <li><img
-                                                                                        src="People_files/2113e6d9-7c4d-459d-8691-a8b532f4d422.jpg">
-                                                                                    <imgtitle style="width: 100px;"
-                                                                                        title="018-13-19">2019-4-30
-                                                                                    </imgtitle><tt>7/9</tt>
-                                                                                </li>
-                                                                                <li><img
-                                                                                    src="People_files/486a4c2f-dc9e-441d-83fb-947d698c51d4.jpg">
-                                                                                <imgtitle style="width: 100px;"
-                                                                                    title="018-13-19">2019-5-25
-                                                                                </imgtitle><tt>8/9</tt>
-                                                                            </li>
-                                                                            <li><img
-                                                                                src="People_files/bad2e201-e060-4b0d-b6fe-700ac6c9014a.jpg">
-                                                                            <imgtitle style="width: 100px;"
-                                                                                title="018-13-19">2019-06-30
-                                                                            </imgtitle><tt>9/9</tt>
-                                                                        </li>
-                                                                            <li><img
-                                                                                src="People_files/party.jpg">
-
-                                                                        </li>
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <p><br></p>
-                                                            <p><span
-                                                                    style="color:#333333;font-family:adobe-caslon-pro, georgia, times new roman, serif;"><span
-                                                                        style="font-size:16px;"></span></span></p>
-                                                            <p style="text-align:center"><br></p>
-                                                            <p><br></p>
-                                                            <style>
-                                                                .wp_editor_art_table td {
-                                                                    border: none;
-                                                                }
-
-                                                                .wp_editor_art_table img {
-                                                                    width: 200px;
-                                                                    height: 200px
-                                                                }
-                                                            </style>
-                                                            <p><br></p><!--\tr-->
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </td>
-                            </tr>
-
-
-
-                        </tbody>
-                    </table>
-
-
-
-
-
-                    <img src="People_files/_visitcount.txt" style="display:none" width="0" height="0">
-                </body>
-            </p>
-        </div>
-    </div>
+  </footer>
 </body>
-
 </html>
